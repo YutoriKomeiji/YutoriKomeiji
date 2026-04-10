@@ -1,6 +1,6 @@
 # Akihisa Ono / 小野 昭久（古明地ゆとり）
 
-Enterprise systems practitioner with over 20 years of SAP-related experience, now working at the intersection of **AI Judgment Design**, **Responsibility Pathway Design**, and **Luminalia OS**.
+Enterprise SAP practitioner with over 20 years of experience, working across both SAP-related enterprise practice and AI design, including **AI Judgment Design**, **Responsibility Pathway Design**, and **Luminalia OS**.
 
 I am **Akihisa Ono**, also publishing under the name **古明地ゆとり (Yutori Komeiji)**.  
 I have worked on SAP-related projects in Japan for more than two decades, across both implementation and maintenance in multiple industries.
@@ -63,7 +63,7 @@ My project experience includes work across multiple sectors such as:
 
 ## Current Focus
 
-My recent work extends from enterprise systems practice into AI system design.
+My current work spans both enterprise systems practice and AI system design.
 
 In particular, I focus on:
 
