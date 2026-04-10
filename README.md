@@ -5,7 +5,7 @@ Enterprise SAP practitioner since 2003, now working at the intersection of **AI 
 I am **Akihisa Ono**, also publishing under the name **古明地ゆとり (Yutori Komeiji)**.  
 Based in **Aichi, Japan**, I have been involved in **SAP projects since June 2003**, covering both implementation and maintenance across multiple industries.
 
-My experience spans a wide range of roles, from hands-on development to upstream consulting and project leadership.
+My experience spans a wide range of roles, from hands-on development to consulting, project coordination, and leadership in enterprise systems.
 
 ## Professional Background
 
