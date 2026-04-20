@@ -96,6 +96,7 @@ Luminalia OS is a structured human-AI dialogue environment designed for:
 
 - note: https://note.com/dantarg
 - Zenn: https://zenn.dev/dantarg
+- LinkedIn: https://www.linkedin.com/in/akihisaono
 - GitHub repositories:
   - https://github.com/YutoriKomeiji/responsibility-pathway-design
   - https://github.com/YutoriKomeiji/Luminalia-Core-Architecture
