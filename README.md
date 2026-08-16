@@ -2,49 +2,73 @@
 
 [English](./README.en.md)
 
-現在の本職は **SAP領域のエンタープライズシステム実務** です。20年以上にわたりSAP関連プロジェクトに携わりながら、個人研究として **責任経路、限定されたAI Authority、人への責任返却、AIを含むシステムの実行時統制** を研究・実装しています。
+SAPを中心としたエンタープライズシステムの仕事に20年以上携わっています。現在もSAP関連業務を本職としつつ、個人活動としてAIの責任設計、AIエージェントの実行制御、人間とAIの役割分担について研究・実装しています。
 
 公開活動では **小野 昭久 / Akihisa Ono**、**古明地ゆとり (Yutori Komeiji)**、ID **dantarg** を使用しています。
 
-現在の活動は、主に次の領域が交差する場所にあります。
+---
 
-- 本職としてのエンタープライズシステム／SAP実務
-- 個人研究としてのAI判断と責任経路設計
-- AIエージェントや外部操作に対するruntime governance
-- 人間–AIシステムアーキテクチャ
-- 技術記事と公開研究成果物
+## 経歴概要
+
+### SAP / エンタープライズシステム
+
+日本国内のSAP関連プロジェクトで、導入、保守、開発、コンサルティング、調整、プロジェクト支援などを経験してきました。
+
+主な経験は以下のとおりです。
+
+- ABAP開発
+- 基本設計
+- 開発リード
+- 要件定義
+- 機能コンサルティング
+- 移行・インターフェース関連の調整
+- チームリード / サブリード
+- PMO
+- プロジェクトマネジメント
+- 顧客側プロジェクトリーダー支援
+
+経験領域は、物流、製造、財務・管理会計、分析・レポーティングなどです。中でも在庫関連業務、原価計算、原価管理には比較的長く関わっています。
+
+クラシックSAPとS/4HANAの双方、オンプレミスおよびクラウドを含む案件を経験しています。
+
+これまでに、商社、製造業、製薬、広告・メディア、産業機器などの業界案件に関わってきました。
 
 ---
 
-## 現在の主な公開活動
+## 個人研究・OSS活動
+
+本業とは別に、AIが判断や実行に関わるシステムで、責任や権限が曖昧にならないための設計を研究しています。
+
+特に関心があるのは、次のようなテーマです。
+
+- AIにどこまで任せ、どこで人間に戻すか
+- 「できること」と「許可されていること」を分けること
+- AIの出力を、そのまま組織の正式判断にしないこと
+- 外部操作が本当に反映されたかを確認すること
+- 停止後の再試行、再開、再承認を区別すること
+- 最後に誰が責任を引き受けるのかを明確にすること
 
 ### Responsibility Pathway Design (RPD)
 
 **[responsibility-pathway-design](https://github.com/YutoriKomeiji/responsibility-pathway-design)**
 
-AIが関与する社会技術システムにおいて、**判断、委任、実行、中断、回復、残余影響**をまたいで責任が切断されないための、暫定的かつレビュー可能な設計フレームワークです。
-
-公開成果物には、設計パターン、変換記録、assurance interface、運用監視と再開放の構造、worked case、verification / validation語彙などが含まれます。
+AIが関与する業務やシステムで、判断、委任、実行、中断、回復までの責任の流れを設計するためのフレームワークです。
 
 ### Responsibility Pathway Engineering (RPE)
 
 **[responsibility-pathway-engineering](https://github.com/YutoriKomeiji/responsibility-pathway-engineering)**
 
-明示的にスコープされたResponsible AI要件の対応関係を、次のような限定された実行時制御へ変換するための公開リファレンスカーネル／ツールキットです。
+人が定めた要件を、AIや自動化システムの実行時チェックへ落とし込むための公開リファレンス実装です。
 
-```text
-allow / hold / human_gate / deny
-```
-
-現在の公開リポジトリは **M1 Governed Reference Kernel** を記録しており、決定論的Python kernel、Requirement Pack評価、REST / OpenAPI / MCP参照インターフェース、ライフサイクルガバナンス、versioning、schema、fixture、checker、CI guardを含みます。
+現在の公開版では、Pythonによる判定カーネル、Requirement Pack、REST / OpenAPI / MCPの参照インターフェース、ライフサイクル管理、スキーマ、テストなどを公開しています。
 
 ### Responsibility Pathway Runtime (RPR)
 
 **[responsibility-pathway-runtime](https://github.com/YutoriKomeiji/responsibility-pathway-runtime)**
 
-重要な外部操作の前に、明示的な責任経路を置くためのMITライセンスのPython runtimeです。
+AIエージェントや自動化が外部操作を行う際に、権限、実行結果、停止、修復、再開、人への判断返却を記録・管理するためのPythonランタイムです。
 
-現在の公開alphaは **0.1.0a4** で、PyPIにも公開しています。公開範囲には、永続的なpathway state、Human Gate、repair / resume / reconciliation境界、readbackを考慮した実行処理、crash / restart continuity、MCP integration、選択されたLean 4状態機械不変条件が含まれます。
+現在の公開alphaは **0.1.0a4** で、PyPIにも公開しています。
 
 - PyPI: https://pypi.org/project/responsibility-pathway-runtime/
 - Live browser demo: https://yutorikomeiji.github.io/responsibility-pathway-runtime/demo.html
@@ -53,107 +77,39 @@ allow / hold / human_gate / deny
 
 **[Asymmetric-Human-AI-Agency](https://github.com/YutoriKomeiji/Asymmetric-Human-AI-Agency)**
 
-次の単純な原則を中心にした設計原則／参照アーキテクチャです。
+2026年1月にまとめた初期の設計原則です。
 
-> **Capabilityは委任できる。Authorityは委任してはならない。**
+> **Capability may be delegated. Authority must not be.**
 
-暗黙のautonomy driftを防ぎ、明示的な人間の判断点を維持し、AIを限定された非主権的actorとして扱うことを目的にしています。
-
----
-
-## 本職：SAP / エンタープライズシステム
-
-現在もSAP関連のエンタープライズシステム業務を本職としており、日本国内のSAP関連プロジェクトに20年以上携わっています。導入、保守、コンサルティング、調整、プロジェクトリードなどを経験してきました。
-
-### 開発・デリバリー
-
-- ABAP開発
-- 基本設計
-- 開発リード
-- インターフェース関連調整
-- 結合工程支援
-
-### コンサルティング・プロジェクト業務
-
-- 要件定義
-- 機能コンサルティング
-- 移行調整
-- チームリード / サブリード
-- PMO
-- プロジェクトマネジメント
-- 顧客側プロジェクトリーダー支援
-
-### SAP領域
-
-主な経験領域には次が含まれます。
-
-- 物流
-- 製造関連プロセス
-- 財務 / 管理会計
-- 分析 / レポーティング
-
-比較的強い領域は、在庫関連業務、原価計算、原価管理です。
-
-クラシックSAP環境とS/4HANAの双方、オンプレミスおよびクラウド指向のプロジェクトを経験しています。
-
-### 業界経験
-
-これまでに関わったプロジェクトには、次のような業界が含まれます。
-
-- 商社
-- 製造業
-- 製薬
-- 広告 / メディア関連
-- 産業機器および周辺領域
+現在は、後続のResponsibility Pathway研究につながる基礎的・歴史的な位置づけとして整理しています。
 
 ---
 
 ## 企業に所属しながら、本名で公開している理由
 
-私は企業に所属していますが、ここで公開しているAI責任研究とOSSは、**勤務先の製品活動とは切り分けた個人研究**として進めています。
+私は企業に所属していますが、ここで公開しているAI研究やOSSは、勤務先の製品活動とは分けた個人活動です。
 
-そのため、この活動を勤務先の企業名で提示したり、勤務先によるスポンサーシップ、endorsement、制度的Authorityがあるかのように示したりはしません。
+そのため、勤務先の企業名や肩書きを、この研究の権威づけとして使うことはしていません。
 
-一方で、個人研究だからといって匿名化し、公開したものへの責任まで薄くしたいとも考えていません。ソフトウェア、アーキテクチャ、主張、設計判断を公開するなら、誰が保守しているのか、何が実装済みで何が未検証なのか、批評や修正がどこへ返るのかを公開記録として残したいと考えています。
+一方で、個人活動だからといって匿名で責任を曖昧にしたくもありません。
+
+公開する以上、誰が作っているのか、どこまで実装できているのか、何がまだ未検証なのか、問題があったときに誰が直すのかを明確にしておきたいと考えています。
 
 そのため、**小野 昭久 / Akihisa Ono** の本名で活動しています。
-
-私にとって本名でのOSS公開は、自由に作るためだけではありません。自分が公開すると決めた成果物について、**Residual Ownerの位置から自分自身が黙って降りないため**でもあります。
-
-この境界は双方向です。
-
-- 勤務先が公開していない個人研究について、勤務先を著者・スポンサーとして扱わない
-- 制度的な肩書きがないことを理由に、自分が公開した成果物への責任を回避しない
-
----
-
-## 設計上の主要テーマ
-
-公開しているAI関連活動では、次の区別を繰り返し扱っています。
-
-- **Authority ≠ capability**
-- **evidence sufficiency ≠ authority**
-- AI output ≠ authorized organizational decision
-- execution receipt ≠ verified external effect
-- recovery ≠ automatic restoration of authority
-- Human Return と Residual Owner を明示的に残す
-- 技術的制御は、暗黙にpermissionを生成するのではなく、失敗や不足を可視化する
-
-特に、観測・判断から、実行、検証、中断、回復、人への責任返却まで、責任を一つの経路として保持するシステムに関心があります。
 
 ---
 
 ## Luminalia
 
-**Luminalia** という、人間–AIの構造化された研究・対話環境も設計・運用しています。
+**Luminalia** という、人間とAIの共同作業・研究のための環境も設計・運用しています。
 
-アーキテクチャ検討、評価、運用実験、内省的な共創などに使用しています。責任経路研究やhuman–AI agency designの一部は公開していますが、内部運用コンポーネントそのものを公開Evidenceとして扱ってはいません。
+AIとの長期的な対話、設計検討、評価、運用実験などに使っており、その中で生まれた考えの一部がResponsibility Pathway関連の公開研究にもつながっています。
 
 ---
 
-## 公開執筆
+## 執筆
 
-AI判断、責任経路、人間–AI agency、operational governanceなどについて、技術・概念記事を公開しています。
+AI、責任設計、人間とAIの役割分担、AIガバナンスなどについて記事を書いています。
 
 - **note:** https://note.com/dantarg
 - **Zenn:** https://zenn.dev/dantarg
@@ -167,31 +123,19 @@ AI判断、責任経路、人間–AI agency、operational governanceなどに�
 - [Responsibility Pathway Engineering](https://github.com/YutoriKomeiji/responsibility-pathway-engineering)
 - [Responsibility Pathway Runtime](https://github.com/YutoriKomeiji/responsibility-pathway-runtime)
 - [Asymmetric Human–AI Agency](https://github.com/YutoriKomeiji/Asymmetric-Human-AI-Agency)
-- [genai-web](https://github.com/YutoriKomeiji/genai-web)
-- [genai-ai-api](https://github.com/YutoriKomeiji/genai-ai-api)
 
 ---
 
-## 研究上の姿勢
+## 公開時の考え方
 
-公開上の主張は、それを支えるEvidenceより広くしないようにしています。
+自分の設計や実装には自信を持って取り組んでいますが、開発者自身の評価と第三者評価は分けて考えています。
 
-公開リポジトリは、**レビュー可能なengineering / research surface**として扱っており、安全性、法令適合、production readiness、外部検証済みであることを自動的に証明するものとは扱いません。
+公開したこと、テストが通ったこと、形式的に確認できたことだけで、現実の安全性や法令適合、実運用での有効性まで証明されたとは考えません。
 
-可能な限り、次を分けて扱います。
-
-- 観測されたEvidenceと解釈
-- design verificationとimplementation verification
-- exercise evidenceとoperational evidence
-- formal modelの結果とruntime / real-world claim
-- assuranceとauthorization
+できるだけ、実装できていること、確認できていること、まだ分からないことを分けて記録するようにしています。
 
 ---
 
-## Identity anchor
-
-このプロフィールリポジトリでは、公開上の同一identityとして、
+## 公開名義
 
 **Akihisa Ono = 小野 昭久 = 古明地ゆとり = Yutori Komeiji = dantarg**
-
-を、エンタープライズシステム実務、AIシステム設計、公開執筆、責任経路研究の各活動へ接続しています。
