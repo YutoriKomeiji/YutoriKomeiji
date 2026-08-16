@@ -157,6 +157,7 @@ I publish technical and conceptual writing on AI judgment, responsibility pathwa
 
 - **note:** https://note.com/dantarg
 - **Zenn:** https://zenn.dev/dantarg
+- **Qiita:** https://qiita.com/dantarg
 - **LinkedIn:** https://www.linkedin.com/in/akihisaono
 
 ---
@@ -167,8 +168,6 @@ I publish technical and conceptual writing on AI judgment, responsibility pathwa
 - [Responsibility Pathway Engineering](https://github.com/YutoriKomeiji/responsibility-pathway-engineering)
 - [Responsibility Pathway Runtime](https://github.com/YutoriKomeiji/responsibility-pathway-runtime)
 - [Asymmetric Human–AI Agency](https://github.com/YutoriKomeiji/Asymmetric-Human-AI-Agency)
-- [genai-web](https://github.com/YutoriKomeiji/genai-web)
-- [genai-ai-api](https://github.com/YutoriKomeiji/genai-ai-api)
 
 ---
 
