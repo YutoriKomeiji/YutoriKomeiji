@@ -2,14 +2,14 @@
 
 [日本語版 / Japanese](./README.md)
 
-Enterprise SAP practitioner with **20+ years of experience** and an independent AI systems designer working on **responsibility pathways, bounded AI authority, human-return mechanisms, and operational controls for AI-enabled systems**.
+My primary profession is **enterprise SAP systems work**. I have worked on SAP-related projects for more than 20 years, while independently researching and implementing **responsibility pathways, bounded AI authority, human-return mechanisms, and operational controls for AI-enabled systems**.
 
 I publish under **Akihisa Ono / 小野 昭久**, **古明地ゆとり (Yutori Komeiji)**, and the ID **dantarg**.
 
 My work currently sits at the intersection of:
 
-- enterprise systems and SAP delivery;
-- AI judgment and responsibility-pathway design;
+- enterprise systems and SAP delivery as my primary profession;
+- AI judgment and responsibility-pathway design as independent research;
 - runtime governance for AI agents and external actions;
 - human–AI system architecture;
 - public technical writing and open research artifacts.
@@ -61,9 +61,9 @@ The repository focuses on preventing silent autonomy drift, preserving explicit 
 
 ---
 
-## Enterprise background
+## Primary profession: SAP / enterprise systems
 
-I have worked on SAP-related projects in Japan for more than two decades, spanning implementation, maintenance, consulting, coordination, and project leadership.
+I currently work professionally in SAP-related enterprise systems and have been involved in SAP projects in Japan for more than two decades, spanning implementation, maintenance, consulting, coordination, and project leadership.
 
 ### Delivery / development
 
