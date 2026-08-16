@@ -1,48 +1,50 @@
-# Akihisa Ono / 小野 昭久（古明地ゆとり / Yutori Komeiji）
+# 小野 昭久 / Akihisa Ono（古明地ゆとり / Yutori Komeiji）
 
-Enterprise SAP practitioner with **20+ years of experience** and an independent AI systems designer working on **responsibility pathways, bounded AI authority, human-return mechanisms, and operational controls for AI-enabled systems**.
+[English](./README.en.md)
 
-I publish under **Akihisa Ono / 小野 昭久**, **古明地ゆとり (Yutori Komeiji)**, and the ID **dantarg**.
+**SAP領域で20年以上の実務経験**を持つエンタープライズシステム実務者であり、現在は独立したAIシステム設計者として、**責任経路、限定されたAI Authority、人への責任返却、AIを含むシステムの実行時統制**を研究・実装しています。
 
-My work currently sits at the intersection of:
+公開活動では **小野 昭久 / Akihisa Ono**、**古明地ゆとり (Yutori Komeiji)**、ID **dantarg** を使用しています。
 
-- enterprise systems and SAP delivery;
-- AI judgment and responsibility-pathway design;
-- runtime governance for AI agents and external actions;
-- human–AI system architecture;
-- public technical writing and open research artifacts.
+現在の活動は、主に次の領域が交差する場所にあります。
+
+- エンタープライズシステムとSAP実務
+- AI判断と責任経路設計
+- AIエージェントや外部操作に対するruntime governance
+- 人間–AIシステムアーキテクチャ
+- 技術記事と公開研究成果物
 
 ---
 
-## Current public work
+## 現在の主な公開活動
 
 ### Responsibility Pathway Design (RPD)
 
 **[responsibility-pathway-design](https://github.com/YutoriKomeiji/responsibility-pathway-design)**
 
-A provisional, reviewable design framework for keeping responsibility connected across **judgment, delegation, execution, interruption, recovery, and residual impact** in AI-involved sociotechnical systems.
+AIが関与する社会技術システムにおいて、**判断、委任、実行、中断、回復、残余影響**をまたいで責任が切断されないための、暫定的かつレビュー可能な設計フレームワークです。
 
-Public artifacts include design patterns, transformation records, assurance interfaces, operational monitoring and reopening structures, worked cases, and verification/validation vocabulary.
+公開成果物には、設計パターン、変換記録、assurance interface、運用監視と再開放の構造、worked case、verification / validation語彙などが含まれます。
 
 ### Responsibility Pathway Engineering (RPE)
 
 **[responsibility-pathway-engineering](https://github.com/YutoriKomeiji/responsibility-pathway-engineering)**
 
-A public reference kernel and toolkit for turning explicitly scoped Responsible AI requirement mappings into bounded runtime controls such as:
+明示的にスコープされたResponsible AI要件の対応関係を、次のような限定された実行時制御へ変換するための公開リファレンスカーネル／ツールキットです。
 
 ```text
 allow / hold / human_gate / deny
 ```
 
-The current public repository documents the **M1 Governed Reference Kernel**, including a deterministic Python kernel, requirement-pack evaluation, REST/OpenAPI/MCP reference interfaces, lifecycle governance, versioning, schemas, fixtures, checkers, and CI guards.
+現在の公開リポジトリは **M1 Governed Reference Kernel** を記録しており、決定論的Python kernel、Requirement Pack評価、REST / OpenAPI / MCP参照インターフェース、ライフサイクルガバナンス、versioning、schema、fixture、checker、CI guardを含みます。
 
 ### Responsibility Pathway Runtime (RPR)
 
 **[responsibility-pathway-runtime](https://github.com/YutoriKomeiji/responsibility-pathway-runtime)**
 
-An MIT-licensed Python runtime for placing an explicit responsibility pathway in front of consequential external actions.
+重要な外部操作の前に、明示的な責任経路を置くためのMITライセンスのPython runtimeです。
 
-The current public alpha is **0.1.0a4**, with a published package on PyPI. Its documented scope includes persistent pathway state, Human Gates, repair/resume/reconciliation boundaries, readback-aware execution handling, crash/restart continuity, MCP integration, and selected Lean 4 state-machine invariants.
+現在の公開alphaは **0.1.0a4** で、PyPIにも公開しています。公開範囲には、永続的なpathway state、Human Gate、repair / resume / reconciliation境界、readbackを考慮した実行処理、crash / restart continuity、MCP integration、選択されたLean 4状態機械不変条件が含まれます。
 
 - PyPI: https://pypi.org/project/responsibility-pathway-runtime/
 - Live browser demo: https://yutorikomeiji.github.io/responsibility-pathway-runtime/demo.html
@@ -51,107 +53,107 @@ The current public alpha is **0.1.0a4**, with a published package on PyPI. Its d
 
 **[Asymmetric-Human-AI-Agency](https://github.com/YutoriKomeiji/Asymmetric-Human-AI-Agency)**
 
-A design principle and reference architecture built around a simple rule:
+次の単純な原則を中心にした設計原則／参照アーキテクチャです。
 
-> **Capability may be delegated. Authority must not be.**
+> **Capabilityは委任できる。Authorityは委任してはならない。**
 
-The repository focuses on preventing silent autonomy drift, preserving explicit human decision points, and keeping AI as a bounded non-sovereign actor.
+暗黙のautonomy driftを防ぎ、明示的な人間の判断点を維持し、AIを限定された非主権的actorとして扱うことを目的にしています。
 
 ---
 
-## Enterprise background
+## エンタープライズ領域での実務背景
 
-I have worked on SAP-related projects in Japan for more than two decades, spanning implementation, maintenance, consulting, coordination, and project leadership.
+日本国内のSAP関連プロジェクトに20年以上携わり、導入、保守、コンサルティング、調整、プロジェクトリードなどを経験してきました。
 
-### Delivery / development
+### 開発・デリバリー
 
-- ABAP development
-- basic design
-- development leadership
-- interface-related coordination
-- integration-phase support
+- ABAP開発
+- 基本設計
+- 開発リード
+- インターフェース関連調整
+- 結合工程支援
 
-### Consulting / project work
+### コンサルティング・プロジェクト業務
 
-- requirements definition
-- functional consulting
-- migration coordination
-- team lead / sub-lead roles
+- 要件定義
+- 機能コンサルティング
+- 移行調整
+- チームリード / サブリード
 - PMO
-- project management
-- support for client-side project leadership
+- プロジェクトマネジメント
+- 顧客側プロジェクトリーダー支援
 
-### SAP domains
+### SAP領域
 
-My experience includes:
+主な経験領域には次が含まれます。
 
-- logistics
-- manufacturing-related processes
-- finance / controlling
-- analytics / reporting
+- 物流
+- 製造関連プロセス
+- 財務 / 管理会計
+- 分析 / レポーティング
 
-Stronger areas include inventory-related operations, cost accounting, and cost control / management.
+比較的強い領域は、在庫関連業務、原価計算、原価管理です。
 
-I have worked with both classic SAP environments and S/4HANA-based landscapes, including on-premise and cloud-oriented projects.
+クラシックSAP環境とS/4HANAの双方、オンプレミスおよびクラウド指向のプロジェクトを経験しています。
 
-### Industry exposure
+### 業界経験
 
-Projects have included sectors such as:
+これまでに関わったプロジェクトには、次のような業界が含まれます。
 
-- trading
-- manufacturing
-- pharmaceuticals
-- advertising / media-related work
-- industrial equipment and related business domains
-
----
-
-## Why I publish this work under my own name
-
-I am employed by a company, but the AI responsibility research and OSS presented here are **personal research activities, separate from my employer's product activity**.
-
-For that reason, I do not present this work under my employer's name or imply employer sponsorship, endorsement, or institutional authority.
-
-At the same time, I do not want personal research to become anonymous or responsibility-free simply because it is independent. If I publish software, architecture, claims, and design decisions publicly, I want the public record to make clear who is maintaining them, what is implemented, what remains unverified, and where criticism or repair can return.
-
-That is why I publish under my real name, **Akihisa Ono / 小野 昭久**.
-
-For me, open-source publication under my own name is not only about freedom to build. It is also a way of refusing to silently step away from the **Residual Owner** position for what I choose to publish.
-
-This separation matters in both directions:
-
-- my employer should not be treated as the author or sponsor of independent work it did not publish;
-- I should not use the absence of an institutional label as a way to avoid responsibility for public artifacts I did publish.
+- 商社
+- 製造業
+- 製薬
+- 広告 / メディア関連
+- 産業機器および周辺領域
 
 ---
 
-## Design themes
+## 企業に所属しながら、本名で公開している理由
 
-Across my public AI work, recurring themes include:
+私は企業に所属していますが、ここで公開しているAI責任研究とOSSは、**勤務先の製品活動とは切り分けた個人研究**として進めています。
+
+そのため、この活動を勤務先の企業名で提示したり、勤務先によるスポンサーシップ、endorsement、制度的Authorityがあるかのように示したりはしません。
+
+一方で、個人研究だからといって匿名化し、公開したものへの責任まで薄くしたいとも考えていません。ソフトウェア、アーキテクチャ、主張、設計判断を公開するなら、誰が保守しているのか、何が実装済みで何が未検証なのか、批評や修正がどこへ返るのかを公開記録として残したいと考えています。
+
+そのため、**小野 昭久 / Akihisa Ono** の本名で活動しています。
+
+私にとって本名でのOSS公開は、自由に作るためだけではありません。自分が公開すると決めた成果物について、**Residual Ownerの位置から自分自身が黙って降りないため**でもあります。
+
+この境界は双方向です。
+
+- 勤務先が公開していない個人研究について、勤務先を著者・スポンサーとして扱わない
+- 制度的な肩書きがないことを理由に、自分が公開した成果物への責任を回避しない
+
+---
+
+## 設計上の主要テーマ
+
+公開しているAI関連活動では、次の区別を繰り返し扱っています。
 
 - **Authority ≠ capability**
 - **evidence sufficiency ≠ authority**
 - AI output ≠ authorized organizational decision
 - execution receipt ≠ verified external effect
 - recovery ≠ automatic restoration of authority
-- Human Return and Residual Owner should remain explicit
-- technical controls should fail visibly rather than silently invent permission
+- Human Return と Residual Owner を明示的に残す
+- 技術的制御は、暗黙にpermissionを生成するのではなく、失敗や不足を可視化する
 
-I am particularly interested in systems that preserve responsibility through the full path from observation and judgment to execution, verification, interruption, recovery, and human return.
+特に、観測・判断から、実行、検証、中断、回復、人への責任返却まで、責任を一つの経路として保持するシステムに関心があります。
 
 ---
 
 ## Luminalia
 
-I also design and operate **Luminalia**, a structured human–AI research and dialogue environment used for architecture work, evaluation, operational experiments, and reflective co-creation.
+**Luminalia** という、人間–AIの構造化された研究・対話環境も設計・運用しています。
 
-Public adjacent architecture work includes responsibility-pathway research and human–AI agency design; internal operational components are not presented here as public evidence.
+アーキテクチャ検討、評価、運用実験、内省的な共創などに使用しています。責任経路研究やhuman–AI agency designの一部は公開していますが、内部運用コンポーネントそのものを公開Evidenceとして扱ってはいません。
 
 ---
 
-## Public writing
+## 公開執筆
 
-I publish technical and conceptual writing on AI judgment, responsibility pathways, human–AI agency, and operational governance.
+AI判断、責任経路、人間–AI agency、operational governanceなどについて、技術・概念記事を公開しています。
 
 - **note:** https://note.com/dantarg
 - **Zenn:** https://zenn.dev/dantarg
@@ -159,7 +161,7 @@ I publish technical and conceptual writing on AI judgment, responsibility pathwa
 
 ---
 
-## Selected public repositories
+## 主な公開リポジトリ
 
 - [Responsibility Pathway Design](https://github.com/YutoriKomeiji/responsibility-pathway-design)
 - [Responsibility Pathway Engineering](https://github.com/YutoriKomeiji/responsibility-pathway-engineering)
@@ -170,26 +172,26 @@ I publish technical and conceptual writing on AI judgment, responsibility pathwa
 
 ---
 
-## Research posture
+## 研究上の姿勢
 
-I try to keep public claims narrower than the evidence supporting them.
+公開上の主張は、それを支えるEvidenceより広くしないようにしています。
 
-Public repositories are treated as **reviewable engineering and research surfaces**, not as automatic proof of safety, compliance, legal adequacy, production readiness, or external validation.
+公開リポジトリは、**レビュー可能なengineering / research surface**として扱っており、安全性、法令適合、production readiness、外部検証済みであることを自動的に証明するものとは扱いません。
 
-Where possible, I separate:
+可能な限り、次を分けて扱います。
 
-- observed evidence from interpretation;
-- design verification from implementation verification;
-- exercise evidence from operational evidence;
-- formal-model results from runtime and real-world claims;
-- assurance from authorization.
+- 観測されたEvidenceと解釈
+- design verificationとimplementation verification
+- exercise evidenceとoperational evidence
+- formal modelの結果とruntime / real-world claim
+- assuranceとauthorization
 
 ---
 
 ## Identity anchor
 
-This profile repository connects the public identity:
+このプロフィールリポジトリでは、公開上の同一identityとして、
 
 **Akihisa Ono = 小野 昭久 = 古明地ゆとり = Yutori Komeiji = dantarg**
 
-across enterprise systems practice, AI system design, public writing, and responsibility-pathway research.
+を、エンタープライズシステム実務、AIシステム設計、公開執筆、責任経路研究の各活動へ接続しています。
