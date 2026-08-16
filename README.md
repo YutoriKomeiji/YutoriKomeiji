@@ -1,20 +1,78 @@
-# Akihisa Ono / 小野 昭久（古明地ゆとり）
+# Akihisa Ono / 小野 昭久（古明地ゆとり / Yutori Komeiji）
 
-Enterprise SAP practitioner with over 20 years of experience, working across both SAP-related enterprise practice and AI design, including **AI Judgment Design**, **Responsibility Pathway Design**, and **Luminalia OS**.
+Enterprise SAP practitioner with **20+ years of experience** and an independent AI systems designer working on **responsibility pathways, bounded AI authority, human-return mechanisms, and operational controls for AI-enabled systems**.
 
-I am **Akihisa Ono**, also publishing under the name **古明地ゆとり (Yutori Komeiji)**.  
-I have worked on SAP-related projects in Japan for more than two decades, across both implementation and maintenance in multiple industries.
+I publish under **Akihisa Ono / 小野 昭久**, **古明地ゆとり (Yutori Komeiji)**, and the ID **dantarg**.
 
-My experience spans a wide range of roles, from hands-on development to consulting, project coordination, and leadership in enterprise environments.
+My work currently sits at the intersection of:
 
-## Professional Background
+- enterprise systems and SAP delivery;
+- AI judgment and responsibility-pathway design;
+- runtime governance for AI agents and external actions;
+- human–AI system architecture;
+- public technical writing and open research artifacts.
 
-### Delivery / development-side experience
+---
+
+## Current public work
+
+### Responsibility Pathway Design (RPD)
+
+**[responsibility-pathway-design](https://github.com/YutoriKomeiji/responsibility-pathway-design)**
+
+A provisional, reviewable design framework for keeping responsibility connected across **judgment, delegation, execution, interruption, recovery, and residual impact** in AI-involved sociotechnical systems.
+
+Public artifacts include design patterns, transformation records, assurance interfaces, operational monitoring and reopening structures, worked cases, and verification/validation vocabulary.
+
+### Responsibility Pathway Engineering (RPE)
+
+**[responsibility-pathway-engineering](https://github.com/YutoriKomeiji/responsibility-pathway-engineering)**
+
+A public reference kernel and toolkit for turning explicitly scoped Responsible AI requirement mappings into bounded runtime controls such as:
+
+```text
+allow / hold / human_gate / deny
+```
+
+The current public repository documents the **M1 Governed Reference Kernel**, including a deterministic Python kernel, requirement-pack evaluation, REST/OpenAPI/MCP reference interfaces, lifecycle governance, versioning, schemas, fixtures, checkers, and CI guards.
+
+### Responsibility Pathway Runtime (RPR)
+
+**[responsibility-pathway-runtime](https://github.com/YutoriKomeiji/responsibility-pathway-runtime)**
+
+An MIT-licensed Python runtime for placing an explicit responsibility pathway in front of consequential external actions.
+
+The current public alpha is **0.1.0a4**, with a published package on PyPI. Its documented scope includes persistent pathway state, Human Gates, repair/resume/reconciliation boundaries, readback-aware execution handling, crash/restart continuity, MCP integration, and selected Lean 4 state-machine invariants.
+
+- PyPI: https://pypi.org/project/responsibility-pathway-runtime/
+- Live browser demo: https://yutorikomeiji.github.io/responsibility-pathway-runtime/demo.html
+
+### Asymmetric Human–AI Agency (AHAA)
+
+**[Asymmetric-Human-AI-Agency](https://github.com/YutoriKomeiji/Asymmetric-Human-AI-Agency)**
+
+A design principle and reference architecture built around a simple rule:
+
+> **Capability may be delegated. Authority must not be.**
+
+The repository focuses on preventing silent autonomy drift, preserving explicit human decision points, and keeping AI as a bounded non-sovereign actor.
+
+---
+
+## Enterprise background
+
+I have worked on SAP-related projects in Japan for more than two decades, spanning implementation, maintenance, consulting, coordination, and project leadership.
+
+### Delivery / development
+
 - ABAP development
 - basic design
 - development leadership
+- interface-related coordination
+- integration-phase support
 
-### Consulting / project-side experience
+### Consulting / project work
+
 - requirements definition
 - functional consulting
 - migration coordination
@@ -23,37 +81,22 @@ My experience spans a wide range of roles, from hands-on development to consulti
 - project management
 - support for client-side project leadership
 
-## SAP Experience
+### SAP domains
 
-I have worked across a broad range of SAP domains, including:
+My experience includes:
 
 - logistics
 - manufacturing-related processes
 - finance / controlling
 - analytics / reporting
 
-My stronger areas include:
+Stronger areas include inventory-related operations, cost accounting, and cost control / management.
 
-- inventory-related operations
-- cost accounting
-- cost control / management
+I have worked with both classic SAP environments and S/4HANA-based landscapes, including on-premise and cloud-oriented projects.
 
-I have experience with both classic SAP environments and more recent S/4HANA-based landscapes, including on-premise and cloud-oriented projects.
+### Industry exposure
 
-## Project Experience
-
-I have participated in multiple large-scale enterprise projects, including long-term work in manufacturing-related environments.
-
-My responsibilities have included:
-- solution planning support
-- requirements definition
-- development and coordination
-- interface-related leadership
-- integration phase support
-
-## Industry Experience
-
-My project experience includes work across multiple sectors such as:
+Projects have included sectors such as:
 
 - trading
 - manufacturing
@@ -61,51 +104,73 @@ My project experience includes work across multiple sectors such as:
 - advertising / media-related work
 - industrial equipment and related business domains
 
-## Current Focus
+---
 
-My current work spans both enterprise systems practice and AI system design.
+## Design themes
 
-In particular, I focus on:
+Across my public AI work, recurring themes include:
 
-- AI Judgment Design
-- Responsibility Pathway Design
-- Luminalia OS / Luminalia Core Architecture
-- human-AI collaborative system design
-- operational design for AI-agent environments
+- **Authority ≠ capability**
+- **evidence sufficiency ≠ authority**
+- AI output ≠ authorized organizational decision
+- execution receipt ≠ verified external effect
+- recovery ≠ automatic restoration of authority
+- Human Return and Residual Owner should remain explicit
+- technical controls should fail visibly rather than silently invent permission
 
-## About Responsibility Pathway Design
-
-Responsibility Pathway Design is not only about assigning responsibility.
-
-It is about designing:
-- where responsibility appears
-- where it is handed over
-- where it can stop
-- where it returns to humans
-- and how repair remains possible after failure
-
-## About Luminalia OS
-
-Luminalia OS is a structured human-AI dialogue environment designed for:
-- research
-- design
-- operation
-- reflective co-creation
-
-## Public Platforms
-
-- note: https://note.com/dantarg
-- Zenn: https://zenn.dev/dantarg
-- LinkedIn: https://www.linkedin.com/in/akihisaono
-- GitHub repositories:
-  - https://github.com/YutoriKomeiji/responsibility-pathway-design
-  - https://github.com/YutoriKomeiji/Luminalia-Core-Architecture
-  - https://github.com/YutoriKomeiji/Asymmetric-Human-AI-Agency
+I am particularly interested in systems that preserve responsibility through the full path from observation and judgment to execution, verification, interruption, recovery, and human return.
 
 ---
 
-This profile repository exists as a public identity anchor connecting:
+## Luminalia
 
-**Akihisa Ono = 小野 昭久 = 古明地ゆとり = Yutori Komeiji**
+I also design and operate **Luminalia**, a structured human–AI research and dialogue environment used for architecture work, evaluation, operational experiments, and reflective co-creation.
 
-across enterprise systems, AI design, public writing, and architectural research. 
+Public adjacent architecture work includes responsibility-pathway research and human–AI agency design; internal operational components are not presented here as public evidence.
+
+---
+
+## Public writing
+
+I publish technical and conceptual writing on AI judgment, responsibility pathways, human–AI agency, and operational governance.
+
+- **note:** https://note.com/dantarg
+- **Zenn:** https://zenn.dev/dantarg
+- **LinkedIn:** https://www.linkedin.com/in/akihisaono
+
+---
+
+## Selected public repositories
+
+- [Responsibility Pathway Design](https://github.com/YutoriKomeiji/responsibility-pathway-design)
+- [Responsibility Pathway Engineering](https://github.com/YutoriKomeiji/responsibility-pathway-engineering)
+- [Responsibility Pathway Runtime](https://github.com/YutoriKomeiji/responsibility-pathway-runtime)
+- [Asymmetric Human–AI Agency](https://github.com/YutoriKomeiji/Asymmetric-Human-AI-Agency)
+- [genai-web](https://github.com/YutoriKomeiji/genai-web)
+- [genai-ai-api](https://github.com/YutoriKomeiji/genai-ai-api)
+
+---
+
+## Research posture
+
+I try to keep public claims narrower than the evidence supporting them.
+
+Public repositories are treated as **reviewable engineering and research surfaces**, not as automatic proof of safety, compliance, legal adequacy, production readiness, or external validation.
+
+Where possible, I separate:
+
+- observed evidence from interpretation;
+- design verification from implementation verification;
+- exercise evidence from operational evidence;
+- formal-model results from runtime and real-world claims;
+- assurance from authorization.
+
+---
+
+## Identity anchor
+
+This profile repository connects the public identity:
+
+**Akihisa Ono = 小野 昭久 = 古明地ゆとり = Yutori Komeiji = dantarg**
+
+across enterprise systems practice, AI system design, public writing, and responsibility-pathway research.
