@@ -106,6 +106,25 @@ Projects have included sectors such as:
 
 ---
 
+## Why I publish this work under my own name
+
+I am employed by a company, but the AI responsibility research and OSS presented here are **personal research activities, separate from my employer's product activity**.
+
+For that reason, I do not present this work under my employer's name or imply employer sponsorship, endorsement, or institutional authority.
+
+At the same time, I do not want personal research to become anonymous or responsibility-free simply because it is independent. If I publish software, architecture, claims, and design decisions publicly, I want the public record to make clear who is maintaining them, what is implemented, what remains unverified, and where criticism or repair can return.
+
+That is why I publish under my real name, **Akihisa Ono / 小野 昭久**.
+
+For me, open-source publication under my own name is not only about freedom to build. It is also a way of refusing to silently step away from the **Residual Owner** position for what I choose to publish.
+
+This separation matters in both directions:
+
+- my employer should not be treated as the author or sponsor of independent work it did not publish;
+- I should not use the absence of an institutional label as a way to avoid responsibility for public artifacts I did publish.
+
+---
+
 ## Design themes
 
 Across my public AI work, recurring themes include:
