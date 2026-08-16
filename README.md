@@ -113,6 +113,7 @@ AI、責任設計、人間とAIの役割分担、AIガバナンスなどにつ�
 
 - **note:** https://note.com/dantarg
 - **Zenn:** https://zenn.dev/dantarg
+- **Qiita:** https://qiita.com/dantarg
 - **LinkedIn:** https://www.linkedin.com/in/akihisaono
 
 ---
