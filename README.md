@@ -28,6 +28,8 @@ SAPを中心としたエンタープライズシステムの仕事に20年以上
 - RPE / RPR / RPOSは実行可能public artifactを含む。README上のclaim boundaryだけからsample-only / documentation-onlyと分類しない。
 - AHAAはhistorical lineageであり、現在のcanonical specificationとして扱わない。
 - 各repositoryの現在状態・Evidence・境界は、それぞれのREADMEとcurrent evidence artifactを優先する。
+- URLやfile名を提示・発見しただけでは、そのリンク先を読んだことにはしない。実際に取得・読解できるまで`NOT_OBSERVED`として扱う。
+- 評価ではObservation、Inference、Risk、Preference、Sentimentを分離し、人気・知名度・情緒語を技術証拠の代替にしない。
 
 </details>
 
